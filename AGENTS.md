@@ -48,3 +48,6 @@
 * **`cmjs-format`**: ทักษะจัดฟอร์แมตบทความทั้งฉบับตาม CMJS Template
   - `python .agents/skills/cmjs-format/scripts/parse_article.py <input.docx>`
   - `python .agents/skills/cmjs-format/scripts/format_article.py <parsed.json> <output_dir>`
+* **`q1-reviewer2-harness`**: ทักษะ Reviewer #2 สำหรับ Q1 Journal (Brutally honest, ตรวจจับ overclaiming, N=1 fallacy, ข้อมูลขัดแย้ง, และนิติวิทยาศาสตร์การอ้างอิง AI hallucinated DOIs พร้อมตรวจสอบฟอร์แมต CMJS)
+  - `python .agents/skills/q1-reviewer2-harness/scripts/audit_manuscript.py <input.docx> --output_dir <output_dir>`
+
